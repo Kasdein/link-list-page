@@ -87,6 +87,44 @@ a p:active {
     /* color of the background when the mouse clicks on a container of a perticular var (targets p variables located inside an a variable)*/
 }
 
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(167, 255, 255);
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-item1{
+    background-color: gold;
+    padding: 10px;
+    flex: 25%;
+}
+
+@media (min-width: 800px) {
+    .flex-container1 {
+        flex: 100%;        
+    }
+}
+
+.flex-item2{
+    background-color: gold;
+    padding: 10px;
+    flex: 25%;    
+}
+
+.flex-item3{
+    background-color: gold;
+    padding: 10px;
+    flex: 25%;    
+}
+
+.flex-itemletsgo{
+    background-color: gold;
+    padding: 10px;
+    flex: 25%;    
+}
+
 #container-top {
     width: 800px;
     /* sets the width of the id'd object */
