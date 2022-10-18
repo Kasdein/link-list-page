@@ -1,27 +1,43 @@
-body {
-    margin: 0;
+body { 
+    margin: 0; 
+    /* margin 0 here helps take the default margin away */
 }
 
 h1 {
     color: rgb(150, 150, 150);
+    /* color of the text */
     line-height: 100px;
+    /* fits the h1 so it is centered vertically in the container */
     margin-left: 20px;
+    /* allows the text to appear more to the right so it's not stuck to the left side of its container*/
     margin-top: 0;
     margin-bottom: 0;
+    /* margin 0 here helps take the default margin away */
     font-family: 'Silkscreen', cursive;
+    /* uses a perticular font for this variable */
     font-weight: 100;
+    /* defines text intensity */
     font-size: 35px;
+    /* decides the size of the text */
 }
 
 h4 {
+    margin-left: 15px;
     margin-top: 20px;
     margin-bottom: 0;
+    /* allows to position the text comparatively to the container */
     font-family: monospace;
+    /* uses a perticular font for this variable */
     font-weight: 1000;
+    /* defines text intensity */
     text-transform: uppercase;
+    /* converts the text to be only uppercase */
     font-size: 20px;
+    /* decides the size of the text */
     color: rgb(129, 163, 163);
+    /* color of the text */
     text-shadow: 1px 1px black;
+    /* creates a shadow on the text to emphasize */
 }
 
 p {
@@ -29,67 +45,99 @@ p {
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 0;
+    /* allows to position the text comparatively to the container */
     font-family: monospace;
+    /* uses a perticular font for this variable */
     font-weight: 200;
+    /* defines text intensity */
     font-size: 16px;
+    /* decides the size of the text */
     column-count: 2;
+    /* devides the text into multiple columns (2) */
 }
 
 a {
     text-decoration: none;
+    /* removes decoration on text (underline for links) */
     color: black;
+    /* color of the text */
+    
 }
 
 a:hover {
     color: cornflowerblue
+    /* color of the text when the mouse hovers over a container (a in this instance)*/
 }
 
 a p {
     background-color: rgb(159, 243, 215);
+    /* color of the text of a perticular var (targets p variables located inside an a variable)*/
     font-size: 14px;
+    /* decides the size of the text of a perticular var (targets p variables located inside an a variable)*/
 }
 
 a p:hover {
     background-color: lightgoldenrodyellow;
+    /* color of the background when the mouse hovers over a container of a perticular var (targets p variables located inside an a variable)*/    
 
 }
 
 a p:active {
     background-color: rgb(255, 221, 221);
+    /* color of the background when the mouse clicks on a container of a perticular var (targets p variables located inside an a variable)*/
 }
 
 #container-top {
     width: 800px;
+    /* sets the width of the id'd object */
     background-image: url("../images/juggler.jpg");
+    /* sets a directory path for the webpage to set an background image */
     background-size: cover;
+    /* allows the image to fill the defined space for the container */
     background-repeat: no-repeat;
+    /* stops the background from repeating if it's too small */
     background-color: powderblue;
+    /* color of background in case image doesn't load */
     background-attachment: fixed;
+    /* makes it so the image doesn't move when you scroll */
     background-position: top;
+    /* aligns the top of the image with the top of the page */
     margin-left: auto;
     margin-right: auto;
+    /* centers the container horizontally (creates an equal margin either side) */
     padding-bottom: 20px;
+    /* allows to have a space after the text at the bottom of the page */
 }
 
 #masthead {
     height: 600px;
+    /* sets the height of the id'd object */
     background-image: url("../images/Cylinder exercise 2.jpg");
+    /* sets a directory path for the webpage to set an background image */
     background-repeat: no-repeat;
-    background-position: right;
+    /* stops the background from repeating if it's too small */
+    background-position: center;
+    /* centers background */
     background-size: cover;
+    /* allows the image to fill the defined space for the container */
 }
 
 #content-holder {
     position: relative;
+    /* sets a hierarchy to allow inheritence of properties frome absolute objects */
 }
 
 #funsketch {
     position: absolute;
+    /* sets a hierarchy to allow the relative objects to inherit properties */
     right: 0;
+    /* sets image to aling to the right side */
     bottom: -20px;
 }
 
 .links-block {
     width: 50%;
+    /* sets link containers to be half the length of the div they are in */
     white-space: nowrap;
+    /* allows the text to continue instead of creating a line break half way through */
 }
